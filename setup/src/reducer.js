@@ -13,7 +13,7 @@ const reducer = (state, action) => {
     case SET_STORIES:
       return {
         ...state,
-        isLoading: true,
+        isLoading: false,
         hits: action.payload.hits,
         nbPages: action.payload.nbPages,
       };
